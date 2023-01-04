@@ -111,6 +111,11 @@
   transition: background 0.2s ease-in-out;
 }
 
-.commentForm button[type="submit"]:hover {
+.commentForm button[type="submit"]:hover:enabled {
   filter: brightness(1.2);
+}
+
+.commentForm button[type="submit"]:disabled {
+  background: var(--gray-600);
+  cursor: not-allowed;
 }
